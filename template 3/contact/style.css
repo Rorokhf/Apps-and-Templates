@@ -1,0 +1,104 @@
+:root {
+    --main-color: #13B6B3;
+    --dark-color: #05417D;
+    --gray-color: #fdfdfd;
+    --white-color: #FFFFFF;
+}
+.form{
+    padding: 80px 0 80px 0;
+    background-color: var(--gray-color);
+}
+.form .card{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    margin: 5px;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 60px;
+}
+/* form */
+.form .card2 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .form .card2 .title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .formInput  {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .group {
+    position: relative;
+  }
+  
+.formInput  .group label {
+    font-size: 14px;
+    color: rgb(99, 102, 102);
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    transition: all .3s ease;
+  }
+  
+  .formInput  .group input,
+  .formInput  .group textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+  }
+  
+  .formInput .group input:placeholder-shown+ label, .formInput .group textarea:placeholder-shown +label {
+    top: 10px;
+    background-color: transparent;
+  }
+  
+  .formInput  .group input:focus,
+  .formInput  .group textarea:focus {
+    border-color: #3366cc;
+  }
+  
+  .formInput  .group input:focus+ label, .form .group textarea:focus +label {
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    color: #3366cc;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  
+  .formInput  .group textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+.formInput .select{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    outline: 0;
+    width: 100%;
+    background-color: transparent;
+}
+.formInput .select select{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+  

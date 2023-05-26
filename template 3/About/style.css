@@ -1,0 +1,110 @@
+:root {
+    --main-color: #13B6B3;
+    --dark-color: #05417D;
+    --gray-color: #fdfdfd;
+    --white-color: #FFFFFF;
+}
+
+.frist-page{
+    background-image: url(../Home/images/woman-with-rubber-gloves-cleaning-floors.jpg);
+    position: relative;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+}
+.frist-page::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #13b6b367;
+    position: absolute;
+}
+.frist-page .content{
+        display: flex;
+        position: absolute;
+        justify-content: space-between; 
+        align-items: center; 
+        bottom: 20%;
+        color: white;
+        width: calc(100% - 10%);
+} 
+.frist-page .content .main-title{
+    font-size: 50px;
+    font-weight: 900;
+}
+.frist-page .content .sub-title{
+    font-size: 30px;
+}
+@media(max-width:770px){
+    .frist-page .content{
+        flex-direction: column;
+        justify-content: center 
+    }
+}
+/* meet people */
+/* this card is inspired form this - https://georgefrancis.dev/ */
+.meet-people {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: var(--main-color);
+}
+.meet-people .content .card {
+    --border-radius: 0.75rem;
+    --primary-color: #7257fa;
+    --secondary-color: #3c3852;
+    width: 210px;
+    font-family: "Arial";
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: var(--border-radius);
+    background: #f1f1f3;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 3%);
+    position: relative;
+  }
+  
+  .meet-people .content  .card > * + * {
+    margin-top: 1.1em;
+  }
+  
+  .meet-people .content  .card .card__content {
+    color: var(--secondary-color);
+    font-size: 0.86rem;
+  }
+  
+  .meet-people .content  .card .card__title {
+    padding: 0;
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+  
+  .meet-people .content  .card .card__date {
+    color: #6e6b80;
+    font-size: 0.8rem;
+  }
+  
+  .meet-people .content  .card .card__arrow {
+    position: absolute;
+    background: var(--primary-color);
+    padding: 0.4rem;
+    border-top-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+    bottom: 0;
+    right: 0;
+    transition: 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* hover */
+  .meet-people .content .card:hover .card__title {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .meet-people .content  .card:hover .card__arrow {
+    background: #111;
+  }
+  
