@@ -1,0 +1,293 @@
+:root {
+    --color-blue: #96BBD6;
+    --color-dark-blue: #8191A1;
+    --color-black: #455666;
+    --color-orange: #FCB97C;
+    --color-gray: #E0DFDD;
+    --color-white: white;
+
+}
+a{
+    color: var(--color-orange);
+}
+a:hover{
+    color: var(--color-black);
+}
+.card-list{
+  display: flex;
+}
+.card-area{
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(200px,1fr));
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    
+}
+.body-card h2::before{
+    font-family: var(--fa-style-family-classic);
+   content: "\f005";
+   color: var(--color-orange);
+   margin-right: 5px
+}
+.parent-card {
+    overflow: hidden;
+    height: 500px;
+}
+.body-card .card {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+    cursor: pointer;
+    /*height: 450px; */
+    
+  }
+  
+.body-card  .content {
+    padding: 1.1rem;
+    flex-grow: 1;
+  }
+  
+.body-card  .image {
+    object-fit: cover;
+    width: 100%;
+    height: 150px;
+    background-color: var(--color-orange);
+    overflow: hidden;
+    z-index: 444;
+
+  }
+.body-card  .image:hover{
+    overflow:visible;
+}
+.body-card  .title-card {
+    
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    
+  }
+  
+.body-card  .desc {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    overflow: hidden;
+  }
+  
+.body-card  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+.body-card  .action span {
+    transition: .3s ease;
+  }
+  
+.body-card  .action:hover span {
+    transform: translateX(4px);
+  }
+.footer-card{
+    border-top: 1px solid var(--color-orange);
+    font-size: 14px;
+}
+/* btn */
+ .category-title button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+  }
+  
+  .category-title button {
+    --primary-color: var(--color-black);
+    --hovered-color: var(--color-blue);
+    position: relative;
+    display: flex;
+    font-weight: 600;
+    font-size: 20px;
+    gap: 0.5rem;
+    align-items: center;
+  }
+  
+  .category-title button p {
+    margin: 0;
+    position: relative;
+    font-size: 20px;
+    color: var(--primary-color)
+  }
+  
+ .category-title  button::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    bottom: -7px;
+    background: var(--hovered-color);
+    height: 2px;
+    transition: 0.3s ease-out;
+  }
+  
+  .category-title button p::before {
+    position: absolute;
+  /*   box-sizing: border-box; */
+    content: "See More";
+    width: 0%;
+    inset: 0;
+    color: var(--hovered-color);
+    overflow: hidden;
+    transition: 0.3s ease-out;
+  }
+  
+ .category-title  button:hover::after {
+    width: 100%;
+  }
+  
+.category-title  button:hover p::before {
+    width: 100%;
+  }
+  
+ .category-title  button:hover svg {
+    transform: translateX(4px);
+    color: var(--hovered-color)
+  }
+  
+ .category-title button svg {
+    color: var(--primary-color);
+    transition: 0.2s;
+    position: relative;
+    width: 15px;
+    transition-delay: 0.2s;
+  }
+/* slid arrow */
+.slid-arrow{
+    position: absolute;
+    background: #fcb97c75;
+    width: 100%;
+    z-index: 3333;
+    top: 408px;
+    height: 100px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
+.slid-arrow i{
+    font-size: 40px;
+    color: var(--color-black);
+}.slid-arrow i:hover{
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+@media(max-width:1060px){
+    .slid-arrow{
+        display: flex;
+    }
+}
+.save {
+  display: flex;
+  justify-content:end;
+  align-items:last baseline;
+}
+.save i:hover{
+color: var(--color-black);
+}
+  /* card Game */
+
+.card-game  .card {
+    --bg: #f7f7f8;
+    --hover-bg: var(--color-blue);
+    --hover-text: var(--color-orange);
+    /*    max-width: 23ch; */
+    text-align: center;
+    background: var(--bg);
+    padding: 1.5em;
+    padding-block: 1.8em;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 1em; */
+     height: 300px; 
+    
+  }
+.card-game .body-card{
+  flex-grow: 1;
+}
+.card-game  .card__body {
+    color: #464853;
+    line-height: 1.5em;
+    font-size: 1em;
+  }
+  
+  .card-game   .card > :not(span) {
+    transition: .3s cubic-bezier(.6,.4,0,1);
+  }
+  
+.card-game  .card > strong {
+    display: block;
+    font-size: 1.4rem;
+    letter-spacing: -.035em;
+  }
+ 
+.card-game  .card span {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--hover-text);
+    border-radius: 5px;
+    font-weight: bold;
+    top: 100%;
+    transition: all .3s cubic-bezier(.6,.4,0,1);
+    
+  }
+  
+.card-game  .card:hover span {
+    top: 0;
+    font-size: 1.2em;
+  }
+  
+.card-game  .card:hover {
+    background: var(--hover-bg);
+  }
+  
+ .card-game .card:hover>div,.card:hover>strong {
+    opacity: 0;
+  }
+/* text 3d */
+.css-3d-text {
+    font-size: 23px;
+    color: #ffc107;
+    font-family: "Arial Black", Gadget, sans-serif;
+    text-shadow: 0px 0px 0 rgb(243,181,0),
+                 1px 1px 0 rgb(230,168,0),
+                 2px 2px 0 rgb(218,156,0),
+                 3px 3px 0 rgb(205,143,0),
+                 4px 4px  0 rgb(193,131,0),
+                 5px 5px 4px rgba(0,0,0,0.6),
+                 5px 5px 1px rgba(0,0,0,0.5),
+                 0px 0px 4px rgba(0,0,0,.2);
+                 
+ }

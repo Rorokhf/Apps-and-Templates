@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Reader</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+
+    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="/global Css/frameworke.css">
+    <link rel="stylesheet" href="/global Css/main.css">
+    <link rel="stylesheet" href="/Explore/explore.css">
+
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative hide-mobile">
+            <img src="/cat-logo.png" alt="" class="w-100 p-relative mt-0">
+            <h3>Rawan Khamis</h3>
+            <ul>
+                <li>
+                    <a class=" d-flex align-center fs-17 c-black res-6 p-10" href="/bashboard/index.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-17 c-black res-6 p-10" href="/Explore/index.html">
+                        <i class="fa-solid fa-map-location-dot fa-fw"></i>
+                        <span class="hide-mobile">Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-17 c-black res-6 p-10" href="/my libarary/libarary.html">
+                        <i class="fa-solid fa-book fa-fw"></i>
+                        <span class="hide-mobile">My Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-17 c-black res-6 p-10" href="/study set/sudy.html">
+                        <i class="fa-solid fa-paper-plane fa-fw"></i>
+                        <span class="hide-mobile">Study set</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-17 c-black res-6 p-10" href="/setting/setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span class="hide-mobile">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-17 c-black res-6 p-10 logOut" href="/Validations/login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span class="hide-mobile">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-100">
+            <!-- Start head -->
+            <div class="head bg-white p-15 flex-between ">
+                <div class="go-site p-relative flex-between">
+                    <a href="/main site/index.html" class="link-back c-orange">
+                        <i class="fa-regular fa-square-caret-left "></i>
+                        <span class="m-10 hide-mobile">Back to site</span>
+                    </a>
+                    <div class="search p-relative">
+                        <input type="search" class="p-10 input-hide searchInput" id="search" placeholder="Type A Keyword">
+                        <div class="search-cards p-relative hide" data-story-cards-container>
+                            
+                            <template data-story-template>
+                                <div class="carditem p-abs">
+                                    <div class="header c-orange" data-header></div>
+                                    <div class="body c-black" data-body></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg c-orange"></i>
+                        <div class="notifications" id="box">
+                            <div class="notifications-item"> 
+                                <div class="text p-10">
+                                    <h4 class="p-0">Samso aliao <span class="f-color">10:07 AM</span> </h4>
+                                    <p>Samso Nagaro Like your home work</p>
+                                </div>
+                                <div class="text p-10">
+                                    <h4>Samso aliao <span class="f-color">10:07 AM</span></h4>
+                                    <p>Samso Nagaro Like your home work</p>
+                                </div>
+                                <div class="text p-10">
+                                    <h4>Samso aliao <span class="f-color">10:07 AM</span></h4>
+                                    <p>Samso Nagaro Like your home work</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </span>
+                    <div class="img-profile bg-orange">
+                        <img src="../avatar.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <!-- End head -->
+            <i class="fa-solid fa-bars fa-lg bars"></i>
+            <h1 class="p-relative title"><a href="/Explore/index.html">Home</a>/Story </h1>
+
+            <!-- start content  -->
+            <div class="body-card  m-20 w-100 p-relative p-10">
+                <div class="category-title flex-between w-100 mb-20 flex-column-mobile">
+                    <h2 class="c-black">Get Some Fun</h2>
+
+                </div>
+                <div class="card-area card-game">
+                    <!-- hhhhrrrerere -->
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="./allGame.js"></script>
+    <script src="/global sites/learn with story/allGame.js"></script>
+    <script src="/global Js/app.js"></script>
+</body>
+
+</html>

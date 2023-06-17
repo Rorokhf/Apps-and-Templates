@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tommy Reader</title>
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- font -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="/global Css/frameworke.css">
+    <link rel="stylesheet" href="../global Css/main.css">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <div class="page d-flex">
+        <div class="sidebar bg-white p-20 p-relative hide-mobile">
+            <img src="../cat-logo.png" alt="" class="w-100 p-relative mt-0">
+            <h3>Rawan Khamis</h3>
+            <ul>
+                <li>
+                    <a class=" d-flex align-center fs-17 c-black res-6 p-10" href="/bashboard/index.html">
+                        <i class="fa-solid fa-user fa-fw"></i>
+                        <span class="hide-mobile">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-17 c-black res-6 p-10" href="../Explore/index.html">
+                        <i class="fa-solid fa-map-location-dot fa-fw"></i>
+                        <span class="hide-mobile">Explore</span>
+                    </a>
+                </li>
+                <li>
+                    <a class=" d-flex align-center fs-17 c-black res-6 p-10" href="/my libarary/libarary.html">
+                        <i class="fa-solid fa-book fa-fw"></i>
+                        <span class="hide-mobile">My Library</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="active d-flex align-center fs-17 c-black res-6 p-10" href="./sudy.html">
+                        <i class="fa-solid fa-paper-plane fa-fw"></i>
+                        <span class="hide-mobile">Study set</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-17 c-black res-6 p-10" href="/setting/setting.html">
+                        <i class="fa-solid fa-gear fa-fw"></i>
+                        <span class="hide-mobile">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a class="d-flex align-center fs-17 c-black res-6 p-10 logOut" href="/Validations/login.html">
+                        <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        <span class="hide-mobile">Log out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="content w-100">
+            <!-- Start head -->
+            <div class="head bg-white p-15 flex-between ">
+                <div class="go-site p-relative flex-between">
+                    <a href="/main site/index.html" class="link-back c-orange">
+                        <i class="fa-regular fa-square-caret-left "></i>
+                        <span class="m-10 hide-mobile">Back to site</span>
+                    </a>
+                    <div class="search p-relative">
+                        <input type="search" class="p-10 input-hide searchInput" id="search" placeholder="Type A Keyword">
+                        <div class="search-cards p-relative hide" data-story-cards-container>
+                            
+                            <template data-story-template>
+                                <div class="carditem p-abs">
+                                    <div class="header c-orange" data-header></div>
+                                    <div class="body c-black" data-body></div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="icons d-flex align-center">
+                    <span class="notification p-relative">
+                        <i class="fa-regular fa-bell fa-lg c-orange"></i>
+                        <div class="notifications" id="box">
+                            <div class="notifications-item"> 
+                                <div class="text p-10">
+                                    <h4 class="p-0">Samso aliao <span class="f-color">10:07 AM</span> </h4>
+                                    <p>Samso Nagaro Like your home work</p>
+                                </div>
+                                <div class="text p-10">
+                                    <h4>Samso aliao <span class="f-color">10:07 AM</span></h4>
+                                    <p>Samso Nagaro Like your home work</p>
+                                </div>
+                                <div class="text p-10">
+                                    <h4>Samso aliao <span class="f-color">10:07 AM</span></h4>
+                                    <p>Samso Nagaro Like your home work</p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </span>
+                    <div class="img-profile bg-orange">
+                        <img src="../avatar.png" alt="" class="w-100">
+                    </div>
+                </div>
+            </div>
+            <!-- End head -->
+            <i class="fa-solid fa-bars fa-lg bars"></i>
+
+            <div class="top-card wrapper d-grid p-relative">
+                <h1 class="p-relative title flex-between">Study Set 
+                    <span></i>Activity <i class="fa-solid fa-chevron-down p-relative btn-act"></i>
+                    </span>
+                    
+                </h1>
+                <div class="menu-activity hide ">
+                    <ul class="w-100 p-10">
+                        <li><a href=""><i class="fa-solid fa-clone"></i> Flash Card</a></li>
+                        <li><a href=""><i class="fa-solid fa-check-to-slot"></i> Test</a></li>
+                        <li><a href=""><i class="fa-solid fa-circle-nodes"></i> Match</a></li>
+                        <li><a href=""><i class="fa-solid fa-layer-group"></i> Your Card</a></li>
+                        <li><a href=""><i class="fa-solid fa-inbox"></i> Add More</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="wrapper d-grid ">
+                <!-- welcome card -->
+            <div class="container">
+                <div class="area">
+                    <div class="score flex-between">
+                        <p > <span class="wrong">0</span> Still learning</p>
+                        <p >Know <span class="right">5</span> </p>
+                    </div>
+                    <div class="study-set p-relative">
+                        <div class="tips flex-between p-10">
+                            <div class="lamp"><i class="fa-regular fa-lightbulb"></i></div>
+                            <div class="mic"><i class="fa-solid fa-volume-high"></i></div>
+                        </div>
+                        <div class="flip-card p-relative">
+                            <div class="flip-card-inner">
+                            
+                                <div class="flip-card-front">
+                                   
+                                    <h2 class="text p-abs align-center text-center">Hello</h2>
+                                </div>
+                                <div class="flip-card-back">
+                                    <h2 class="text  p-abs align-center text-center">Salut</h2>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                       
+                        
+                    </div>
+                   
+                    <div class="btn">
+                        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
+                        <div class="check"><i class="fa-solid fa-check"></i></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+<script src="https://unpkg.com/scrollreveal"></script>
+ <script src="./app.js"></script> 
+ <script src="../global Js/app.js"></script>  
+</body>
+
+</html>

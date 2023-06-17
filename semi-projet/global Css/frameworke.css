@@ -1,0 +1,167 @@
+
+/* Srat box */
+.d-flex{
+    display: flex;
+}
+.align-center{
+    align-items: center;
+}
+.space-between{
+    justify-content: space-between;
+}
+.d-grid{
+    display: grid;
+}
+.justfy-start{
+    justify-content: start;
+}
+.justfy-center{
+    justify-content: center;
+}
+.gap-20{
+    gap: 20px;
+}
+/* end box */
+.w-100{
+    width: 100%;
+}
+.w-50{
+    width: 50%;
+}
+/* start padding + margin */
+.p-20{
+    padding: 20px;
+}
+.p-10{
+    padding: 10px;
+}
+.p-15{
+    padding: 15px;
+}
+.m-20{
+    padding: 20px;
+}
+.m-10{
+    margin-right: 10px;
+}
+.m-0{
+    margin: 0;
+}
+.mt-0{
+    margin-top: 0;
+}
+.mt-5{
+    margin-top:5px ;
+}
+.mt-20{
+    padding: 20px;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+/* end padding + margin */
+/* start color */
+.bg-blue{
+    background-color: #96BBD6;
+}
+.bg-gray{
+    background-color: #8191A1;
+}
+.bg-black{
+    background-color: #455666;
+}
+.bg-orange{
+    background-color: #FCB97C;
+}
+.bg-light-gray{
+    background-color: #E0DFDD;
+}
+.bg-white{
+    background-color: white;
+}
+.c-light-gray{
+    color: #E0DFDD;
+}
+.c-black{
+    color: #455666;
+}
+.c-white{
+    color: white;
+}
+.c-orange{
+color: #FCB97C;
+}
+.c-gray{
+    color: #8191A1;
+}
+/* end color */
+/* position */
+.p-relative{
+    position: relative;
+}
+.p-abs{
+    position: absolute;
+}
+/* end position */
+
+/* font size */
+.fs-17{
+font-size: 17px;
+}
+.text-center{
+    text-align: center;
+}
+/* end font size */
+/* border */
+.res-6{
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+.res-10{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.over-flow{
+    overflow: hidden;
+}
+.card-shadow{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+@media(max-width:767px){
+    .hide-mobile{
+        display: none;
+    }
+    .input-hide{
+width: 0 !important;
+border: none !important;
+    }
+    .text-c-mobile{
+        text-align: center;
+    }
+    .block-mobile{
+        display: block;
+    }
+    .flex-column-mobile{
+        flex-direction: column;
+    }
+    .d-content{
+        display: contents;
+    }
+}
+.hide{
+    display: none !important;
+}
+/* component */
+.flex-between{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+}
+/* end component */
+

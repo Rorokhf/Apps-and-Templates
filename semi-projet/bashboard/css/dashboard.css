@@ -1,0 +1,56 @@
+:root {
+    --color-blue: #96BBD6;
+    --color-dark-blue: #8191A1;
+    --color-black: #455666;
+    --color-orange: #FCB97C;
+    --color-gray: #E0DFDD;
+    --color-white: white;
+
+}
+/* intro */
+.intro{
+    height: 150px;
+
+}
+.body{
+        grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+        margin-left: 5px;
+        margin-right: 5px;
+}
+.level{
+    justify-content: space-around;
+    border-bottom: 1px solid;
+}
+.level-btn{
+    cursor: pointer;
+}
+.level-btn:hover{
+    color: var(--color-orange);
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.table-activity{
+        display: grid;
+        grid-template-columns:  repeat(auto-fill, minmax(500px,1fr));
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+
+}
+.tr-body{
+    border-bottom: 2px solid var(--color-orange);
+}
+table.blueTable tfoot .links {
+    text-align: right;
+  }
+  table.blueTable tfoot .links a{
+    display: inline-block;
+    background: var(--color-black);
+    color: var(--color-orange);
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+
+
